@@ -20,4 +20,24 @@
 		<center><p class ="Guide">This software is meant for you, based off where you want muscle growth<br>
 			and the amount of effort you prefer to exert upon yourself.
 			</p><center>
+            <h2>Effort</h2>
+		<form id = "effort" action="/action_page.php">
+            <input type="number" name="effort"><br><br>
+  			<input type="submit" value="Submit">
+			</form>
+            <h4>Note: 1 = Very Light <br>
+			2 = Light <br>
+			3 = Moderate <br>
+			4 = Vigorous <br>
+			5 = Very Vigorous </h3>
+            <br>
+            <h2>Target Areas/Interests</h2>
+            <br>
+            <h2>Equipment/Location</h2>
+	<script>
+		function myFunction() {
+			docuement.getElementByID("effort").submit();
+		}
+			</script>	
+	</body>
 </html>
