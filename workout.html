@@ -11,6 +11,10 @@
 			background: yellow;
 			color: rgb(200,100,0);
 		}
+		.Form {
+			background: orange;
+			color: rgb(140,87,35);
+		}
 	</style>
 	<body>
 		<center><h1 class="Welcome">Welcome to:</h1><center>
@@ -20,7 +24,7 @@
 		<center><p class ="Guide">This software is meant for you, based off where you want muscle growth<br>
 			and the amount of effort you prefer to exert upon yourself.
 			</p><center>
-            <h2>Effort</h2>
+            <h2 class = "Form">Effort</h2>
 		<form id = "effort" action="/action_page.php">
             <input type="number" name="effort"><br><br>
   			<input type="submit" value="Submit">
@@ -31,9 +35,9 @@
 			4 = Vigorous <br>
 			5 = Very Vigorous </h3>
             <br>
-            <h2>Target Areas/Interests</h2>
+            <h2 class = "Form">Target Areas/Interests</h2>
             <br>
-            <h2>Equipment/Location</h2>
+            <h2 class = "Form">Equipment/Location</h2>
 	<script>
 		function myFunction() {
 			docuement.getElementByID("effort").submit();
@@ -41,3 +45,4 @@
 			</script>	
 	</body>
 </html>
+
