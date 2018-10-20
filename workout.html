@@ -27,8 +27,6 @@
             <h2 class = "Form">Effort</h2>
 		<form id = "effort" action="/action_page.php">
             <input type="number" name="effort"><br><br>
-  			<input type="submit" value="Submit">
-			</form>
             <h4>Note: 1 = Very Light <br>
 			2 = Light <br>
 			3 = Moderate <br>
@@ -36,12 +34,25 @@
 			5 = Very Vigorous </h3>
             <br>
             <h2 class = "Form">Target Areas/Interests</h2>
+            Which part of your body do you want to work out? (Cardio, Arms) 
+            <input type="string" name = "part"><br>
+            Do you prefer exercising outside(O) or inside(I)?
+            <input type="string" name = "location"><br>
             <br>
             <h2 class = "Form">Equipment/Location</h2>
+            Do you live near a gym or have one yourself?(Y/N) <form id = "target" action="/action_page.php">
+			<input type="string" name="gym"><br>
+        Do you have a bike?(Y/N)
+        	<input type="string" name="bike"><br>
+		<input type="submit" value="Submit">
+			</form>	 
 	<script>
-		function myFunction() {
+		function check() {
 			docuement.getElementByID("effort").submit();
+            docuement.getElementByID("gym").submit();
+            docuement.getElementByID("bike").submit();
+            docuement.getElementByID("part").submit();
+            docuement.getElementByID("location").submit();
 		}
 			</script>	
 	</body>
-</html>
