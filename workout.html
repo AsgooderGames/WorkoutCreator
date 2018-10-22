@@ -25,7 +25,7 @@
 			and the amount of effort you prefer to exert upon yourself.
 			</p><center>
             <h2 class = "Form">Effort</h2>
-		<form id = "effort" action="/action_page.php">
+		<form id = "effort" action="/action_page.php" target="_self">
             <input type="number" name="effort"><br><br>
             <h4>Note: 1 = Very Light <br>
 			2 = Light <br>
@@ -54,6 +54,6 @@
             docuement.getElementByID("part").submit();
             docuement.getElementByID("location").submit();
             var gym = document.getElementsByID("gym")[0].value;
-            docuement.write(gym);
+            window.alert(gym);
 			</script>	
 	</body>
